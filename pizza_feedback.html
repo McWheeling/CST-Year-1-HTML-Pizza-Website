@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+
+    <!--
+   Filename: pizza_feedback.html
+   Author: Jared Striemer
+   Date: 12/15/2021
+   Purpose: CWEB180 Final Project - Feedback Page HTML File Uses the XMLRender File
+   -->
+
+    <title>Customer Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/feedbackpage.css">
+    <script type="text/javascript" src="xmlrender.js"></script>
+</head>
+
+<body onload="load_quotes()">
+
+<header>
+    <img src="media/banner.jpg" height="250" alt="Pizza Banner" />
+
+    <nav>
+            <!-- I added a Navicon for the mobile view-->
+            <a href="#" id="navicon"><img src="media/navicon.png" alt="Menu" /></a>
+        <ul>
+            <li><a href="pizza_home.html">Home</a></li>
+            <li><a href="pizza_menu.html">Menu</a></li>
+            <li><a href="pizza_history.html">History of Pizza</a></li>
+            <li><a href="pizza_feedback.html">Customer Feedback</a></li>
+        </ul>
+    </nav>
+
+    <h1>Customer Feedback</h1>
+</header>
+<!--    <form action="aformprocessor.html" method="get">-->
+    <form>
+        <h2>1. Which category best describes you?</h2>
+<!--        <div class="formRows">-->
+<!--            -->
+<!--        </div>-->
+        <table class="q1category">
+            <thead>
+                <th></th><th>18-24</th><th>25-34</th><th>35-44</th><th>45-54</th><th>55-64</th><th>65 or older</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                <th>Male</th>
+                    <td><input type="radio" name="male" id="M18to24" value="y"/></td>
+                    <td><input type="radio" name="male" id="M25to34" value="y"/></td>
+                    <td><input type="radio" name="male" id="M35to44" value="y"/></td>
+                    <td><input type="radio" name="male" id="M45to54" value="y"/></td>
+                    <td><input type="radio" name="male" id="M55to64" value="y"/></td>
+                    <td><input type="radio" name="male" id="M65plus" value="y"/></td>
+                </tr>
+
+                <tr>
+                    <th>Female</th>
+                        <td><input type="radio" name="female" id="F18to24" value="y"/></td>
+                        <td><input type="radio" name="female" id="F25to34" value="y"/></td>
+                        <td><input type="radio" name="female" id="F35to44" value="y"/></td>
+                        <td><input type="radio" name="female" id="F45to54" value="y"/></td>
+                        <td><input type="radio" name="female" id="F55to64" value="y"/></td>
+                        <td><input type="radio" name="female" id="F65plus" value="y"/></td>
+                </tr>
+
+                <tr>
+                    <th>Non-Binary</th>
+                    <td><input type="radio" name="nonBinary" id="NB18to24" value="y"/></td>
+                    <td><input type="radio" name="nonBinary" id="NB25to34" value="y"/></td>
+                    <td><input type="radio" name="nonBinary" id="NB35to44" value="y"/></td>
+                    <td><input type="radio" name="nonBinary" id="NB45to54" value="y"/></td>
+                    <td><input type="radio" name="nonBinary" id="NB55to64" value="y"/></td>
+                    <td><input type="radio" name="nonBinary" id="NB65plus" value="y"/></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. What is the most important thing for you when choosing a place to order pizza from?</h2>
+        <div class="formRows">
+            <div>
+                <input type="radio" name="price" id="price" value="y" />
+                <label for="price">Price</label>
+            </div>
+            <div>
+                <input type="radio" name="location" id="location" value="y" />
+                <label for="location">Location</label>
+            </div>
+            <div>
+                <input type="radio" name="quality" id="quality" value="y" />
+                <label for="dessert">Quality of food</label>
+            </div>
+            <div>
+                <input type="radio" name="specials" id="specials" value="y" />
+                <label for="specials">Pasta</label>
+            </div>
+            <div>
+                <input type="radio" name="pasta" id="otherReason" value="y" />
+                <label for="otherReason">Other (please specify)</label><br />
+                <textarea name="otherReason" id="otherReason1" wrap="hard" maxlength="500" minlength="10"></textarea>
+            </div>
+        </div>
+
+        <h2>3. How was your recent dining experience with Saskpolytech Pizza Store?</h2>
+        <div class="formRows">
+            <label><input type="radio" name="experience" id="experience1">Excellent</label>
+            <label><input type="radio" name="experience" id="experience2">Good</label>
+            <label><input type="radio" name="experience" id="experience3">Neither Disagree Nor Agree</label>
+            <label><input type="radio" name="experience" id="experience4">Bad</label>
+            <label><input type="radio" name="experience" id="experience5">Terrible</label>
+        </div>
+
+        <h2>4. How many times do you order pizza from Saskpolytech Pizza Store per month?</h2>
+        <div class="formRows">
+            <div>
+                <input type="radio" name="pizza0" id="pizza0" value="y" />
+                <label for="pizza0">0</label>
+            </div>
+            <div>
+                <input type="radio" name="pizza1or2" id="pizza1or2" value="y" />
+                <label for="pizza1or2">1-2</label>
+            </div>
+            <div>
+                <input type="radio" name="pizza3or5" id="pizza3or5" value="y" />
+                <label for="pizza3or5">3-5</label>
+            </div>
+            <div>
+                <input type="radio" name="pizza6orMore" id="pizza6orMore" value="y" />
+                <label for="pizza6orMore">6 or more</label>
+            </div>
+        </div>
+
+        <h2>5. The quality of food provided by Saskpolytech Pizza Store?</h2>
+        <div class="formRows">
+            <label><input type="radio" name="foodQuality" id="foodQuality1">Strongly Disagree</label>
+            <label><input type="radio" name="foodQuality" id="foodQuality2">Disagree</label>
+            <label><input type="radio" name="foodQuality" id="foodQuality3">Neither Disagree Nor Agree</label>
+            <label><input type="radio" name="foodQuality" id="foodQuality4">Agree</label>
+            <label><input type="radio" name="foodQuality" id="foodQuality5">Strongly Agree</label>
+        </div>
+
+        <h2>6. You browse through new menu items when they are added.</h2>
+        <!-- Couldn't figure out to make them go on top of the radio button/ in a line so kept it at this -->
+        <div class="formRows">
+            <label><input type="radio" name="menuItems" id="browseMenu1">Strongly Disagree</label>
+            <label><input type="radio" name="menuItems" id="browseMenu2">Disagree</label>
+            <label><input type="radio" name="menuItems" id="browseMenu3">Neither Disagree Nor Agree</label>
+            <label><input type="radio" name="menuItems" id="browseMenu4">Agree</label>
+            <label><input type="radio" name="menuItems" id="browseMenu5">Strongly Agree</label>
+        </div>
+
+        <h2>7. Which of the following side items do you think goes best with pizza?</h2>
+        <div class="formRows">
+            <div>
+                <input type="radio" name="wings" id="wings" value="y" />
+                <label for="wings">Wings</label>
+            </div>
+            <div>
+                <input type="radio" name="breadsticks" id="breadsticks" value="y" />
+                <label for="breadsticks">Breadsticks</label>
+            </div>
+            <div>
+                <input type="radio" name="dessert" id="dessert" value="y" />
+                <label for="dessert">Dessert</label>
+            </div>
+            <div>
+                <input type="radio" name="pasta" id="pasta" value="y" />
+                <label for="pasta">Pasta</label>
+            </div>
+            <div>
+                <input type="radio" name="pasta" id="otherSide" value="y" />
+                <label for="otherSide">Other (please specify)</label><br />
+                <textarea name="otherSide" id="otherSide1" wrap="hard" maxlength="200" minlength="10"></textarea>
+            </div>
+        </div>
+
+        <h2>8. Are you more willing to buy pizza if discounts or coupons are offered?</h2>
+        <div class="formRows">
+            <div>
+                <input type="radio" name="discounts1" id="discounts1" value="y" />
+                <label for="discounts1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="discounts2" id="discounts2" value="n" />
+                <label for="discounts2">No</label>
+            </div>
+        </div>
+
+        <h2>9. Would you like to Saskpolytech Pizza Store ambience changed?</h2>
+        <div class="formRows">
+            <div>
+                <input type="radio" name="ambienceChange" id="ambienceChange" value="y" />
+                <label for="ambienceChange">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="ambienceChange2" id="ambienceChange2" value="n" />
+                <label for="ambienceChange2">No</label>
+            </div>
+        </div>
+
+        <h2>10. What would you consider a trendy place to eat?</h2>
+        <div class="formRows">
+            <label for="userComments"></label>
+            <textarea name="commentData" id="userComments" wrap="hard" maxlength="200" minlength="10"></textarea>
+        </div>
+
+        <div class="formSubmitButtons">
+            <input type="submit" value="Done" />
+        </div>
+
+    </form>
+
+<!-- Quotes relates -->
+<div id="content">
+    Test area
+</div>
+
+    <footer>
+        <hr />
+        <strong><em>PHONE</em></strong>
+        <a href="tel:+13061231234">306-123-1234</a>&#8226;
+
+        <strong><em>LOCATION</em></strong>
+        <a href="https://www.saskpolytech.ca">Saskatchewan Polytechnic</a>&copy;, Saskatoon Campus
+        1130 Idylwyld Drive N &#8226;
+        <a href="mailto:striemer6559@saskpolytech.ca">Saskatoon, SK S7K 3R5</a> &#8226;
+
+        <strong><em>HOURS</em></strong>
+        Mon-Sat 11 am–6 pm
+        <em>Sun Closed</em>
+    </footer>
+
+</body>
+</html>

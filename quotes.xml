@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="http://www.saskpolytech.ca">
+    <Quote>
+        <Name>Alex Wang</Name>
+        <Phone>(503) 555-7555</Phone>
+        <Feedback>
+            <Stars>5</Stars>
+            <Date>11/21/2021</Date>
+            <PostalCode>97403</PostalCode>
+            <Country>USA</Country>
+            <Comments>Awesome food!</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>Joe H.</Name>
+        <Phone>(503) 555-7555</Phone>
+        <Feedback>
+            <Stars>5</Stars>
+            <Date>11/21/2021</Date>
+            <PostalCode>97403</PostalCode>
+            <Country>USA</Country>
+            <Comments>Awesome Service!</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>Grant A.</Name>
+        <Phone>(306) 321-1234</Phone>
+        <Feedback>
+            <Stars>4</Stars>
+            <Date>10/23/2021</Date>
+            <PostalCode>96401</PostalCode>
+            <Country>CAN</Country>
+            <Comments>Adequate Service</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>May K.</Name>
+        <Phone>(506) 123-1234</Phone>
+        <Feedback>
+            <Stars>4</Stars>
+            <Date>10/23/2021</Date>
+            <PostalCode>98401</PostalCode>
+            <Country>CAN</Country>
+            <Comments>Friendly staff and good service</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>Peter Parker.</Name>
+        <Phone>(506) 123-1234</Phone>
+        <Feedback>
+            <Stars>5</Stars>
+            <Date>12/17/2020</Date>
+            <PostalCode>98461</PostalCode>
+            <Country>USA</Country>
+            <Comments>Friendly staff, Spider Man Approves</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>Ironman.</Name>
+        <Phone>(506) 123-1234</Phone>
+        <Feedback>
+            <Stars>3</Stars>
+            <Date>10/23/2021</Date>
+            <PostalCode>98401</PostalCode>
+            <Country>USA</Country>
+            <Comments>Good food slow service had to save the world</Comments>
+        </Feedback>
+    </Quote>
+    <Quote>
+        <Name>Sydney G.</Name>
+        <Phone>(506) 123-1324</Phone>
+        <Feedback>
+            <Stars>5</Stars>
+            <Date>10/23/2021</Date>
+            <PostalCode>92801</PostalCode>
+            <Country>GER</Country>
+            <Comments>Great service and fun new experience</Comments>
+        </Feedback>
+    </Quote>
+</Root>

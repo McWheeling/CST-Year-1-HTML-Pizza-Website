@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+/*
+    Filename: homepage.css
+    Author: Jared Striemer
+    Date: 12/15/2021
+    Purpose: CWEB180 Final Project - History Page CSS File
+*/
+
+html {
+    background-image: url("../media/pisa.jpg");
+}
+
+body {
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    font-family: Champagne, sans-serif;
+}
+
+header > img {
+    width: 100%;
+}
+
+/* *Here* -*/
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1.5em 2em;
+}
+
+/* *Till Here* - Are for the Navigation List (Making them appear horizontally) */
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    /*background-color: black;*/
+    background-color: rgba(23, 21, 21, 0.5);
+    color: white;
+}
+
+#navicon {
+    display: none;
+}
+
+img#pizzaiolo
+{
+    float: left;
+    padding: 10px 20px 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-family: italic;
+}
+
+section > p {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+footer {
+    padding: 2em 2em 2em;
+    text-align: center;
+}
+
+footer > a, a:visited {
+    color: black;
+}
+
+/*#pizzaVid {*/
+
+/*}*/
+
+/* Video Styles */
+/*skewVideo*/
+video {
+    animation: spin 5.5s infinite;
+}
+
+input#skewVideo:checked ~ video {
+    animation-play-state: running;
+}
+
+input#skewVideo:not(:checked) ~ video {
+    animation-play-state: paused;
+}
+
+
+input#skewVideo {
+    display: none;
+}
+
+input#skewVideo:not(:checked) + label::after {
+    content: "\21bb";
+}
+
+input#skewVideo:checked + label::after {
+    content: "\270b";
+}
+
+label {
+    font-size: 100px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        background-image: none;
+    }
+
+    #navicon {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+        margin-top: 0;
+    }
+
+    #navicon:hover + ul, nav ul:hover {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        float: none;
+        text-align: left;
+        font-size: 1em;
+    }
+}

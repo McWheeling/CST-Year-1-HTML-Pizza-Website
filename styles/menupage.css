@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+/*
+    Filename: homepage.css
+    Author: Jared Striemer
+    Date: 12/15/2021
+    Purpose: CWEB180 Final Project - Menu Page CSS File
+*/
+
+html {
+    background-image: url("../media/menu.jpg");
+}
+
+body {
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    font-family: Champagne, sans-serif;
+}
+
+header > img {
+    width: 100%;
+}
+
+/* *Here* -*/
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1.5em 2em;
+}
+
+/* *Till Here* - Are for the Navigation List (Making them appear horizontally) */
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    /*background-color: black;*/
+    background-color: rgba(23, 21, 21, 0.5);
+    color: white;
+}
+
+#navicon {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-family: italic;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: Champagne, sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-family: Champagne, sans-serif;
+    text-decoration: underline;
+}
+
+#makeYourOwn {
+    text-align: center;
+}
+
+#toppingsAndSizes {
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+#toppingcount {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background: radial-gradient(circle, white 50%, lightgray);
+    border: 2px double black;
+    box-shadow: 3px 3px 3px gray;
+    font-size: 1.2em;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pizzaList {
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 1em;
+}
+
+p, a, a:visited {
+    text-align: center;
+    color: black;
+}
+
+footer {
+    padding: 2em 2em 2em;
+    text-align: center;
+}
+
+footer > a, a:visited {
+    color: black;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        background-image: none;
+    }
+
+    /*#toppingsList {*/
+    /*    display: none;*/
+    /*}*/
+
+    #navicon {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+        margin-top: 0;
+    }
+
+    #navicon:hover + ul, nav ul:hover {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        float: none;
+        text-align: left;
+        font-size: 1em;
+    }
+}
+
+@media only print {
+    dl > dt > dd {
+        display: table;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    html, body {
+        background: transparent;
+    }
+
+    header img {
+        display: none;
+    }
+
+
+}

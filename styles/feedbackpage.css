@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/*
+    Filename: homepage.css
+    Author: Jared Striemer
+    Date: 12/15/2021
+    Purpose: CWEB180 Final Project - Feedback Page CSS File
+*/
+
+html {
+    background-image: url("../media/home.jpg");
+}
+
+body {
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    font-family: Champagne, sans-serif;
+}
+
+header > img {
+    width: 100%;
+}
+
+/* *Here* -*/
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1.5em 2em;
+}
+
+/* *Till Here* - Are for the Navigation List (Making them appear horizontally) */
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    background-color: rgba(23, 21, 21, 0.5);
+    color: white;
+}
+
+#navicon {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-family: italic;
+}
+
+footer {
+    padding: 2em 2em 2em;
+    text-align: center;
+}
+
+table#q1category {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2em;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+div.formRows {
+    font-size: 1.2em;
+}
+
+div.formSubmitButtons {
+    margin: 2em 10em 2em;
+}
+
+footer > a, a:visited {
+    color: black;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        background-image: none;
+    }
+
+    #navicon {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+        margin-top: 0;
+    }
+
+    #navicon:hover + ul, nav ul:hover {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        float: none;
+        text-align: left;
+        font-size: 1em;
+    }
+}

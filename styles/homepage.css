@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+/*
+    Filename: homepage.css
+    Author: Jared Striemer
+    Date: 12/15/2021
+    Purpose: CWEB180 Final Project - Home Page CSS File
+    Note: When going into ipad view the initial page doesn't display properly but after
+        clicking on one of the other pages it does
+*/
+
+html {
+    background-image: url("../media/home.jpg");
+}
+
+body {
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    font-family: Champagne, sans-serif;
+}
+
+header > img {
+    width: 100%;
+}
+
+/* *Here* -*/
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 1.5em 2em;
+}
+
+/* *Till Here* - Are for the Navigation List (Making them appear horizontally) */
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    /*background-color: black;*/
+    background-color: rgba(23, 21, 21, 0.5);
+    color: white;
+}
+
+#navicon {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-family: italic;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: Champagne, sans-serif;
+}
+
+section > p {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+img#fullPizza {
+    /*padding: 10px 600px 10px;*/
+    padding: 2em 35em 2em;
+    transform: rotateY(60deg);
+    transform: skew(10deg, 10deg);
+    filter: grayscale(0.7) contrast(0.7);
+}
+
+img#burger {
+    padding: 10px 600px 10px;
+    transform: rotateY(70deg);
+    transform: skew(10deg, 10deg);
+    filter: grayscale(0.5) contrast(0.5);
+
+}
+
+img#wings {
+    padding: 10px 600px 10px;
+    transform: rotateY(80deg);
+    transform: skew(-10deg, -10deg);
+    filter: grayscale(0.8) contrast(0.6);
+}
+
+footer {
+    padding: 2em 2em 2em;
+    text-align: center;
+}
+
+footer > a, a:visited {
+    color: black;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        /*background-image: none;*/
+    }
+
+    #navicon {
+        display: block;
+        text-align: left;
+    }
+
+    nav ul {
+        display: none;
+        margin-top: 0;
+    }
+
+    #navicon:hover + ul, nav ul:hover {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        float: none;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    img#fullPizza {
+        padding: 10px 50px 10px;
+        transform: rotateY(60deg);
+        transform: skew(10deg, 10deg);
+        filter: grayscale(0.7) contrast(0.7);
+    }
+
+    img#burger {
+        padding: 10px 50px 10px;
+        transform: rotateY(70deg);
+        transform: skew(10deg, 10deg);
+        filter: grayscale(0.5) contrast(0.5);
+
+    }
+
+    img#wings {
+        padding: 10px 50px 10px;
+        transform: rotateY(80deg);
+        transform: skew(-10deg, -10deg);
+        filter: grayscale(0.8) contrast(0.6);
+    }
+}
+
+/*@media only screen and (max-width: 640px) {*/
+/*    body {*/
+/*        width: 100%;*/
+/*        !*background-image: none;*!*/
+/*    }*/
+
+/*    #navicon {*/
+/*        display: block;*/
+/*        text-align: left;*/
+/*    }*/
+
+/*    nav ul {*/
+/*        display: none;*/
+/*        margin-top: 0;*/
+/*    }*/
+
+/*    #navicon:hover + ul, nav ul:hover {*/
+/*        display: block;*/
+/*    }*/
+
+/*    nav ul li {*/
+/*        width: 100%;*/
+/*        float: none;*/
+/*        text-align: left;*/
+/*        font-size: 1em;*/
+/*    }*/
+
+/*    img#fullPizza {*/
+/*        padding: 10px 50px 10px;*/
+/*        transform: rotateY(60deg);*/
+/*        transform: skew(10deg, 10deg);*/
+/*        filter: grayscale(0.7) contrast(0.7);*/
+/*    }*/
+
+/*    img#burger {*/
+/*        padding: 10px 50px 10px;*/
+/*        transform: rotateY(70deg);*/
+/*        transform: skew(10deg, 10deg);*/
+/*        filter: grayscale(0.5) contrast(0.5);*/
+
+/*    }*/
+
+/*    img#wings {*/
+/*        padding: 10px 50px 10px;*/
+/*        transform: rotateY(80deg);*/
+/*        transform: skew(-10deg, -10deg);*/
+/*        filter: grayscale(0.8) contrast(0.6);*/
+/*    }*/
+/*}*/

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+   Filename: pizza_history.html
+   Author: Jared Striemer
+   Date: 12/15/2021
+   Purpose: CWEB180 Final Project - History Page HTML File
+   -->
+
+    <title>History of Pizza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/historypage.css">
+    <script src="scripts/cp_spin.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="media/banner.jpg" height="250" alt="Pizza Banner" />
+
+    <nav>
+            <!-- I added a Navicon for the mobile view-->
+            <a href="#" id="navicon"><img src="media/navicon.png" alt="Menu" /></a>
+        <ul>
+            <li><a href="pizza_home.html">Home</a></li>
+            <li><a href="pizza_menu.html">Menu</a></li>
+            <li><a href="pizza_history.html">History of Pizza</a></li>
+            <li><a href="pizza_feedback.html">Customer Feedback</a></li>
+        </ul>
+    </nav>
+
+    <h1>History of Pizza</h1>
+</header>
+
+<section>
+    <p>
+        Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a dish of Italian origin consisting of a usually round,
+        flat base of leavened wheat-based dough topped with tomatoes, cheese,
+        and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.),
+        which is then baked at a high temperature, traditionally in a wood-fired oven.
+        A small pizza is sometimes called a pizzetta. A person who makes pizza is known as a pizzaiolo.
+    </p>
+
+    <p>
+        In Italy, pizza is served informal settings, such as at a restaurant,
+        is presented unsliced and eaten with a knife and fork.
+        In casual settings, however, it is cut into wedges to be eaten while held in hand.
+    </p>
+
+<img id="pizzaiolo" src="media/pizzaiolo-1830.jpg" height="150" alt="Pizzaiolo" />
+
+<p>
+    The term pizza was first recorded in the 10th century in a Latin manuscript from the
+    Southern Italian town of Gaeta in Lazio, on the border with Campania. The modern pizza was invented in Naples,
+    and the dish and its variants have since become popular in many countries.
+    It has become one of the most popular foods globally and a typical fast food item in Europe,
+    North America and Australasia; available at pizzerias (restaurants specializing in pizza),
+    restaurants offering Mediterranean cuisine, via pizza delivery, and street food. In addition,
+    various food companies sell ready-baked pizzas, frozen in grocery stores, to be reheated in a home oven.
+</p>
+    <input type="checkbox" id="skewVideo" />
+    <label for="skewVideo"></label>
+    <video controls autoplay>
+        <source src="media/pizza_hist.mp4" type="video/mp4" >
+        <track kind="captions" label="PizzaHistory" src="media/pizzaHistory.vtt" default/>
+            <!-- Tried to do srclang but it did not work -->
+        <p><em>To play this clip your browser needs to support html5</em></p>
+    </video>
+
+</section>
+
+<footer>
+    <hr />
+    <strong><em>PHONE</em></strong>
+    <a href="tel:+13061231234">306-123-1234</a>&#8226;
+
+    <strong><em>LOCATION</em></strong>
+    <a href="https://www.saskpolytech.ca">Saskatchewan Polytechnic</a>&copy;, Saskatoon Campus
+    1130 Idylwyld Drive N &#8226;
+    <a href="mailto:striemer6559@saskpolytech.ca">Saskatoon, SK S7K 3R5</a> &#8226;
+
+    <strong><em>HOURS</em></strong>
+    Mon-Sat 11 am–6 pm
+    <em>Sun Closed</em>
+</footer>
+
+</body>
+</html>

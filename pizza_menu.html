@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--
+   Filename: pizza_menu.html
+   Author: Jared Striemer
+   Date: 12/15/2021
+   Purpose: CWEB180 Final Project - Menu Page HTML File
+   -->
+
+    <title>Saskpolytech Pizza Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/menupage.css">
+</head>
+<body>
+
+<header>
+    <img src="media/banner.jpg" height="250" alt="Pizza Banner" />
+
+    <nav>
+            <!-- I added a Navicon for the mobile view-->
+            <a href="#" id="navicon"><img src="media/navicon.png" alt="Menu" /></a>
+        <ul>
+            <li><a href="pizza_home.html">Home</a></li>
+            <li><a href="pizza_menu.html">Menu</a></li>
+            <li><a href="pizza_history.html">History of Pizza</a></li>
+            <li><a href="pizza_feedback.html">Customer Feedback</a></li>
+        </ul>
+    </nav>
+
+    <h1>Saskpolytech Pizza Menu</h1>
+</header>
+
+    <section>
+        <h2><em>CAN'T FIND YOUR PIZZA?</em></h2>
+        <h3>MAKE YOUR OWN PIZZA WITH OVER <em id="toppingcount">18</em> TOPPINGS</h3>
+
+        <h4>For Accessibility use the following to jump to a preferred section</h4>
+        <p>For <strong>Tradition Pizza</strong> <a href="#traditionalJump">Click Here</a></p>
+        <p>For <strong>Specialty Pizza</strong> <a href="#specialityJump">Click Here</a></p>
+        <p>For <strong>Additional Toppings</strong> <a href="#additionalJump">Click Here</a></p>
+
+    <dl id="toppingsAndSizes">
+        <dt>Mushroom, Onions, Green Peppers, Tomatoes, Spinach, Pineapple, Black Olives, </dt>
+            <dt>Banana Peppers, Jalapenos, Pepperoni, Ham, Back Bacon, Garlic Sausage, Ground Beef,
+                Salami, Shrimp, Chicken, Feta, <strong>AND NOW PICKLES!!</strong></dt><br />
+
+        <dt>STARTING AT $10.95</dt>
+        <dd>SMALL 8" PIZZA</dd><br />
+
+        <dt>STARTING AT $13.95</dt>
+        <dd>MEDIUM 10" PIZZA</dd><br />
+
+        <dt>STARTS AT $24.95</dt>
+        <dd>LARGE 13" PIZZA</dd><br />
+
+        <dt>STARTS AT $32.95</dt>
+        <dd>XLARGE 15" PIZZA</dd><br />
+    </dl>
+
+    <!-- Table -->
+<!--    TRADITIONAL PIZZA (Table)-->
+<!--    Small 8" 6 pieces | Medium 10" 8 pieces | Large 13" 16 pieces | Extra Large 15" 20 pieces-->
+<!--    1 TOPPING       10.95                         15.95                          24.95                              33.50-->
+<!--    2 TOPPING       12.50                         17.95                          27.95                              36.95-->
+<!--    3 TOPPING       13.50                         17.95                          30.95                              38.95-->
+<!--    LOADED          14.95                         22.95                          34.95                              45.95-->
+
+    <h3 id="traditionalJump">TRADITIONAL PIZZA</h3>
+
+        <!-- Was going to make it so that the table disapears when in mobile screens but wasn't sure if we needed it
+             or not so I began and stopped -->
+<!--        <dl id="toppingsList">-->
+<!--            <dt>1 TOPPING</dt>-->
+<!--            <dd>Small 8" 6 Pieces</dd>-->
+<!--            <dd>10.95</dd>-->
+<!--        </dl>-->
+
+        <table>
+            <thead>
+                <th>TOPPINGS</th><th>Small 8" 6 Pieces</th><th>Medium 10" 8 Pieces</th><th>Large 13" 16 Pieces</th><th>Extra Large 15" 20 Pieces</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>1 TOPPING</th><td>10.95</td><td>15.95</td><td>24.95</td><td>33.50</td>
+                </tr>
+
+                <tr>
+                    <th>2 TOPPING</th><td>12.50</td><td>17.95</td><td>27.95</td><td>36.95</td>
+                </tr>
+
+                <tr>
+                    <th>3 TOPPING</th><td>13.50</td><td>17.95</td><td>30.95</td><td>38.95</td>
+                </tr>
+
+                <tr>
+                    <th>LOADED</th><td>14.95</td><td>22.95</td><td>34.95</td><td>45.95</td>
+                </tr>
+            </tbody>
+    </table>
+
+    <dl class="pizzaList">
+        <br/><dt>1 SHRIMP & MUSHROOM</dt>
+        <dt>2 PEPPERONI MUSHROOM BACON</dt>
+        <dt>3 BACON MUSHROOM SAUSAGE</dt>
+        <dt>4 HAM MUSHROOM SAUSAGE</dt>
+        <dt>5 SALAMI MUSHROOM BACON</dt>
+        <dt>6 SAUSAGE MUSHROOM GREEN PEPPER</dt>
+        <dt>7 BACON MUSHROOM</dt>
+        <dt>8 HAM MUSHROOM GREEN PEPPER</dt>
+        <dt>9 PEPPERONI MUSHROOM</dt>
+        <dt>10 SALAMI</dt>
+        <dt>11 BACON</dt>
+        <dt>12 PEPPERONI</dt>
+        <dt>13 HAM MUSHROOM TOMATOES</dt>
+        <dt>14 SAUSAGE</dt>
+        <dt>15 HAM</dt>
+        <dt>16 SALAMI PEPPERONI BACON</dt>
+        <dt>17 HAM MUSHROOM</dt>
+        <dt>18 MUSHROOM GREEN PEPPER</dt>
+        <dt>19 MUSHROOM</dt>
+        <dt>20 CHEESE</dt>
+        <dt>21 ALL DRESSED</dt>
+            <dd> &#8226; mushroom, salami, sausage, ham, pepperoni, onion, green pepper, pineapple &#8226; </dd>
+        <dt>22 BEEF MUSHROOM</dt>
+        <dt>23 BEEF ONION</dt>
+        <dt>24 HAM PINEAPPLE</dt>
+        <dt>25 VEGETARIAN</dt>
+            <dd> &#8226; mushroom, onion, green pepper, tomatoes, pineapple &#8226; </dd>
+        <dt>26 SPINACH FETA</dt>
+            <dd> &#8226; priced the same as a three-topping &#8226; </dd>
+        <dt>27 JULIANA SPECIAL</dt>
+            <dd> &#8226; mushroom, salami, sausage, ham, pepperoni, onion, green pepper, ground beef &#8226; </dd>
+        <dt>28 ALL MEAT</dt>
+            <dd> &#8226; salami, sausage, ham, pepperoni, ground beef &#8226; </dd>
+    </dl>
+
+        <br />
+
+        <h3 id="specialityJump">SPECIALTY PIZZA</h3>
+        <dl class="pizzaList">
+        <h4>S $14.95 | M $22.95 | L $34.95 | XL $45.95</h4>
+            <dt>29 BBQ CHICKEN</dt>
+                <dd> &#8226; chicken, onions, green pepper with bbq sauce &#8226; </dd>
+            <dt>30 MEDITERRANEAN</dt>
+                <dd> &#8226; chicken, feta, black olives, green pepper, tomatoes &#8226; </dd>
+            <dt>31 BUFFALO RANCH CHICKEN</dt>
+                <dd> &#8226; chicken, green pepper, onion with spicy buffalo ranch sauce &#8226; </dd>
+            <dt>32 HAWAIIAN CHICKEN WITH ALFREDO SAUCE</dt>
+                <dd> &#8226; chicken bacon pineapple with our alfredo sauce &#8226; </dd>
+            <dt>33 BACON CHEESEBURGER</dt>
+                <dd> &#8226; breakfast bacon, ground beef, pickles, onions, topped with tex mex cheese &#8226; </dd>
+            <dt>34 FIERY CHICKEN WITH HOT BARBEQUE SAUCE</dt>
+                <dd> &#8226; chicken, banana peppers, jalapenos with our hot barbeque sauce &#8226; </dd>
+            <dt>35 SWEET THAI CHILI CHICKEN</dt>
+                <dd> &#8226; chicken, green pepper, onions with chili thai sauce &#8226; </dd>
+            <dt>36 GREEK CHICKEN WITH TZATZIKI</dt>
+                <dd> &#8226; chicken, onions, green pepper, feta, tomatoes with our tzatziki sauce &#8226; </dd>
+        </dl>
+        <blockquote><em>Our dough is made fresh daily, and our pizza sauce is made in-house using only the finest ingredients</em></blockquote>
+
+        <h3 id="additionalJump">ADDITIONAL TOPPINGS</h3>
+        <dl class="pizzaList">
+            <dt>EXTRA CHEESE</dt>
+                <dd> &#8226; S 2.00 | M 3.00 | L 4.00 | XL 5.00 &#8226; </dd>
+            <dt>ADDITIONAL TOPPINGS</dt>
+                <dd> &#8226; S 1.00 | M 2.50 | L 3.00 | XL 4.00 &#8226; </dd>
+            <dt>ADD CHICKEN</dt>
+                <dd> &#8226; S 2.00 | M 3.00 | L 4.00 | XL 5.00 &#8226; </dd>
+            <dt>ADD SHRIMP</dt>
+                <dd> &#8226; S 2.00 | M 3.00 | L 4.00 | XL 5.00 &#8226; </dd>
+            <dt>ADD FETA</dt>
+                <dd> &#8226; S 2.00 | M 3.00 | L 4.00 | XL 6.00 &#8226; </dd>
+            <dt>SPECIALTY SAUCE</dt>
+                <dd> &#8226; S 2.00 | M 3.00 | L 4.00 | XL 5.00 &#8226; </dd>
+                <dd> &#8226; bbq, buffalo ranch, teriyaki, alfredo, thai chili, tzatziki &#8226; </dd>
+        </dl>
+    </section>
+
+    <footer>
+        <hr />
+        <strong><em>PHONE</em></strong>
+        <a href="tel:+13061231234">306-123-1234</a>&#8226;
+
+        <strong><em>LOCATION</em></strong>
+        <a href="https://www.saskpolytech.ca">Saskatchewan Polytechnic</a>&copy;, Saskatoon Campus
+        1130 Idylwyld Drive N &#8226;
+        <a href="mailto:striemer6559@saskpolytech.ca">Saskatoon, SK S7K 3R5</a> &#8226;
+
+        <strong><em>HOURS</em></strong>
+        Mon-Sat 11 am–6 pm
+        <em>Sun Closed</em>
+    </footer>
+
+</body>
+</html>
